@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "zouroboros-memory-mcp",
+        "--db-path",
+        "./data/memory.db"
+      ],
+      "env": {
+        "OLLAMA_URL": "http://localhost:11434"
+      }
+    }
+  }
+}
