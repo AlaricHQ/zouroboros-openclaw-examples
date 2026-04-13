@@ -1,5 +1,10 @@
 # Zouroboros OpenClaw Examples
 
+[![Core Packages](https://img.shields.io/badge/core-packages-black)](https://github.com/AlaricHQ/zouroboros-openclaw)
+[![Examples Repo](https://img.shields.io/badge/status-active_examples-blue)](https://github.com/AlaricHQ/zouroboros-openclaw-examples)
+[![npm memory](https://img.shields.io/npm/v/zouroboros-memory)](https://www.npmjs.com/package/zouroboros-memory)
+[![npm autoloop](https://img.shields.io/npm/v/zouroboros-autoloop)](https://www.npmjs.com/package/zouroboros-autoloop)
+
 Copy-pasteable examples for the OpenClaw-facing Zouroboros packages published from `AlaricHQ/zouroboros-openclaw`.
 
 ## Repos
@@ -40,6 +45,14 @@ cd zouroboros-openclaw-examples
 ```
 
 Pick one example directory and follow its README.
+
+Fastest path:
+
+```bash
+cd examples/memory-openclaw
+npm install
+npm run seed
+```
 
 ## Root OpenClaw MCP Config
 
