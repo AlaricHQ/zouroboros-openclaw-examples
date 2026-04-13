@@ -41,6 +41,29 @@ cd zouroboros-openclaw-examples
 
 Pick one example directory and follow its README.
 
+## Root OpenClaw MCP Config
+
+This repo now includes a root `.mcp.json` that wires:
+
+- `memory` → `./examples/memory-openclaw/data/memory.db`
+- `autoloop` → `./examples/` as the results root
+
+If you want to use it directly:
+
+```bash
+cp .mcp.json /path/to/your/openclaw-project/.mcp.json
+```
+
+Or merge the relevant server blocks into your existing config.
+
+## Recommended Flow
+
+1. Run `cd examples/memory-openclaw && npm install && npm run seed`
+2. Copy or merge the root `.mcp.json` into your OpenClaw project
+3. Use `examples/swarm-gate` to decide whether a task should stay direct
+4. Use `examples/autoloop-hello` when you want a safe local optimization target
+5. Use `examples/bench-local` when you want a seeded local benchmark fixture
+
 ## Notes
 
 These examples are intentionally small. The package repo should hold the code and API surface; this repo should hold runnable setup patterns for OpenClaw users.

@@ -29,6 +29,8 @@ Copy `.mcp.json` into your project root or merge the `memory` server block into 
 
 The included config uses a project-local database at `./data/memory.db`.
 
+If you are starting from the repo root, you can also use the shared `file 'Projects/zouroboros-openclaw-examples/.mcp.json'` example and keep this directory structure intact.
+
 ## Skill wiring
 
 The included `SKILL.md` is a concrete example of how an OpenClaw skill can rely on the memory MCP server for recall before it answers.

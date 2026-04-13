@@ -24,6 +24,16 @@ git commit -m "baseline"
 autoloop --program ./program.md --executor "openclaw ask"
 ```
 
+## Dry Run
+
+Before handing control to an LLM executor, you can verify the local fixture:
+
+```bash
+npm test
+node ./scripts/measure.mjs
+cat ./metrics.json
+```
+
 ## Notes
 
 - Run inside a git repo

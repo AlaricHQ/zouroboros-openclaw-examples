@@ -1,0 +1,23 @@
+{
+  "servers": {
+    "memory": {
+      "command": "npx",
+      "args": [
+        "zouroboros-memory-mcp",
+        "--db-path",
+        "./examples/memory-openclaw/data/memory.db"
+      ],
+      "env": {
+        "OLLAMA_URL": "http://localhost:11434"
+      }
+    },
+    "autoloop": {
+      "command": "npx",
+      "args": [
+        "autoloop-mcp",
+        "--results-dir",
+        "./examples"
+      ]
+    }
+  }
+}

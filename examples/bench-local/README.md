@@ -20,6 +20,8 @@ npm install
 npm run seed
 ```
 
+This creates `./data/bench-memory.db` with deterministic seed facts.
+
 ## Run one benchmark
 
 ```bash

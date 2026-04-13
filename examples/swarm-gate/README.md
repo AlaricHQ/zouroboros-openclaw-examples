@@ -13,6 +13,7 @@ npm install -g zouroboros-swarm-gate
 ```bash
 swarm-gate "fix a typo on line 42"
 swarm-gate --json "build a REST API with auth, tests, and deploy"
+npx zouroboros-swarm-gate --json "ship a dashboard with API routes and CI"
 ```
 
 ## Typical interpretation
