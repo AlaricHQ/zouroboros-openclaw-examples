@@ -6,5 +6,6 @@ dist/
 *.log
 results.tsv
 report.md
+metrics.json
 data/
 .mcp.local.json

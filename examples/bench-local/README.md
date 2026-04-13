@@ -1,25 +1,29 @@
 # Bench Example
 
-Benchmark `zouroboros-memory` locally with `zouroboros-bench`.
+Reproducible local benchmark fixture for `zouroboros-bench` against `zouroboros-memory`.
 
 ## Install
 
 ```bash
-npm install -D zouroboros-bench
-npm install zouroboros-memory
+npm install
 ```
+
+## Files
+
+- `package.json` — local install surface
+- `facts.json` — deterministic seed facts
+- `scripts/seed-memory.mjs` — initializes and populates `./data/bench-memory.db`
 
 ## Prepare memory
 
 ```bash
-npx zouroboros-memory init
-npx zouroboros-memory store --entity project --key stack --value "node typescript sqlite" --decay long
+npm run seed
 ```
 
 ## Run one benchmark
 
 ```bash
-npx zouroboros-bench --benchmarks longmemeval --limit 25
+ZOUROBOROS_MEMORY_DB=./data/bench-memory.db npx zouroboros-bench --benchmarks longmemeval --limit 25
 ```
 
 ## Generate a report

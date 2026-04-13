@@ -16,10 +16,10 @@ Copy-pasteable examples for the OpenClaw-facing Zouroboros packages published fr
 
 ## Layout
 
-- `examples/memory-openclaw` — `.mcp.json` starter and local memory quick start
+- `examples/memory-openclaw` — OpenClaw MCP wiring, sample `SKILL.md`, and seed data
 - `examples/swarm-gate` — task-routing examples for direct vs swarm decisions
-- `examples/autoloop-hello` — minimal optimization loop scaffold
-- `examples/bench-local` — local benchmark workflow against `zouroboros-memory`
+- `examples/autoloop-hello` — runnable optimization loop sample with code, tests, and metric extraction
+- `examples/bench-local` — reproducible local benchmark fixture with seed script and sample facts
 
 ## Prerequisites
 

@@ -1,0 +1,23 @@
+[
+  {
+    "entity": "user",
+    "key": "response-style",
+    "value": "prefers concise output",
+    "decay": "permanent",
+    "category": "preference"
+  },
+  {
+    "entity": "project-zouroboros",
+    "key": "platform-strategy",
+    "value": "OpenClaw packages are standalone distribution surfaces",
+    "decay": "long",
+    "category": "project"
+  },
+  {
+    "entity": "project-zouroboros",
+    "key": "github-org",
+    "value": "AlaricHQ hosts the OpenClaw-facing repos",
+    "decay": "long",
+    "category": "project"
+  }
+]

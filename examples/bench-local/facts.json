@@ -1,0 +1,30 @@
+[
+  {
+    "entity": "user",
+    "key": "language",
+    "value": "en-US",
+    "decay": "permanent",
+    "category": "preference"
+  },
+  {
+    "entity": "project",
+    "key": "stack",
+    "value": "node typescript sqlite",
+    "decay": "long",
+    "category": "project"
+  },
+  {
+    "entity": "project",
+    "key": "goal",
+    "value": "ship portable OpenClaw packages from AlaricHQ",
+    "decay": "long",
+    "category": "project"
+  },
+  {
+    "entity": "project",
+    "key": "distribution",
+    "value": "use standalone npm packages before asking users to adopt Zo Computer",
+    "decay": "long",
+    "category": "decision"
+  }
+]

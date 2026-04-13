@@ -1,31 +1,37 @@
 # Memory Example
 
-Minimal local setup for `zouroboros-memory` as an OpenClaw MCP server.
+Minimal but complete local setup for `zouroboros-memory` as an OpenClaw MCP server, including a starter `SKILL.md` and seed data.
 
 ## Install
 
 ```bash
-npm install zouroboros-memory
+npm install
 ```
 
-## Initialize the database
+## Files
+
+- `.mcp.json` — OpenClaw MCP server definition
+- `SKILL.md` — sample skill that assumes the memory MCP server is available
+- `seed-facts.json` — starter facts for a local database
+- `package.json` — local install surface for the example
+
+## Initialize and seed the database
 
 ```bash
-npx zouroboros-memory init
-```
-
-This creates the default database under your home directory unless you override `ZOUROBOROS_MEMORY_DB`.
-
-## Store and search facts
-
-```bash
-npx zouroboros-memory store --entity user --key preference --value "prefers concise output" --decay permanent
+npx zouroboros-memory init --db-path ./data/memory.db
+npx zouroboros-memory batch-store ./seed-facts.json --db-path ./data/memory.db
 npx zouroboros-memory search "concise output"
 ```
 
 ## OpenClaw MCP config
 
 Copy `.mcp.json` into your project root or merge the `memory` server block into your existing MCP config.
+
+The included config uses a project-local database at `./data/memory.db`.
+
+## Skill wiring
+
+The included `SKILL.md` is a concrete example of how an OpenClaw skill can rely on the memory MCP server for recall before it answers.
 
 ## Optional vector search
 
@@ -38,5 +44,5 @@ export OLLAMA_URL=http://localhost:11434
 Then use hybrid search:
 
 ```bash
-npx zouroboros-memory hybrid "what does the user prefer?"
+npx zouroboros-memory hybrid "what does the user prefer?" --db-path ./data/memory.db
 ```

@@ -1,0 +1,16 @@
+{
+  "name": "zouroboros-memory-openclaw-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "mkdir -p ./data && npx zouroboros-memory init --db-path ./data/memory.db",
+    "seed": "npm run init && npx zouroboros-memory batch-store ./seed-facts.json --db-path ./data/memory.db",
+    "search": "npx zouroboros-memory search \"concise output\" --db-path ./data/memory.db"
+  },
+  "dependencies": {
+    "zouroboros-memory": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

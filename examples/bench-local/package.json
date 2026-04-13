@@ -1,0 +1,15 @@
+{
+  "name": "zouroboros-bench-local-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "mkdir -p ./data && node ./scripts/seed-memory.mjs"
+  },
+  "dependencies": {
+    "zouroboros-bench": "^1.0.0",
+    "zouroboros-memory": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

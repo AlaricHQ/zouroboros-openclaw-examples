@@ -1,0 +1,11 @@
+{
+  "name": "zouroboros-autoloop-hello",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
